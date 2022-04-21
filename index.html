@@ -9,6 +9,11 @@
             console.error("Error");
             console.warn("Сообщение предупреждения");
             
+            function notReadyYet() {
+                alert('Извините, товара нет в наличии');
+                return false;
+            }
+            
             function notReadyAlert() {
                 alert('Sorry, not ready yet!\n Извините, еще не готово!');
                 return false;
@@ -78,7 +83,7 @@
                     <!-- Боевой аппарат. Мотор 3,5 со светофора уедет в точку. Шашки на дороге обеспечены.<br> -->
                     <div class="price">Цена: 800000 &#8381;</div>
                 </a>
-                <input type="button" value="Купить">  
+                <input type="button" value="Купить" onclick="return notReadyYet()">  
             </div>
             <div class="card">
                 <a href="product.html">
@@ -87,7 +92,7 @@
                     <!-- Эта машина в описании не нуждается.<br> -->
                     <div class="price">Цена: 200000 &#8381;</div>
                 </a>
-                <input type="button" value="Купить">
+                <input type="button" value="Купить"onclick="return notReadyYet()">
             </div>        
             <div class="card">
                 <a href="product.html">
@@ -96,7 +101,7 @@
                         <!-- Лучше всяких позерских мерседесов. Диски и обвесы в комплекте. Респект на дороге обеспечен<br> -->
                     <div class="price">Цена: 500000 &#8381;</div>
                 </a>  
-                <input type="button" value="Купить">
+                <input type="button" value="Купить"onclick="return notReadyYet()">
             </div>    
         </main>
         <hr>
