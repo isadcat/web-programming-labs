@@ -8,6 +8,11 @@
             console.log("Привет");
             console.error("Error");
             console.warn("Сообщение предупреждения");
+            
+            function notReadyAlert() {
+                alert('Sorry, not ready yet!\n Извините, еще не готово!');
+                return false;
+            }
         </script>
     </head>
 
@@ -20,9 +25,9 @@
         <nav class="main-menu">
             <ul>
                 <li><a href="index.html">Машины</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="delivery.html">Доставка автомобиля</a></li>
-                <li><a href="promotions.html">Акции</a></li>
+                <li><a href="contacts.html" onclick="return notReadyAlert()">Контакты</a></li>
+                <li><a href="delivery.html" onclick="return notReadyAlert()">Доставка автомобиля</a></li>
+                <li><a href="promotions.html" onclick="return notReadyAlert()">Акции</a></li>
             </ul>
             <div class="searchbox">
                 <input type="search" placeholder="поиск автомобилей">
